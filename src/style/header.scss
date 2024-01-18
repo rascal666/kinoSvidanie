@@ -1,0 +1,35 @@
+@import './variables';
+
+.header{
+  margin-bottom: $indent-xl;
+
+  &__title{
+    @include responsive-font-size;
+    font-weight: bold;
+    margin-bottom: $indent-m;
+    -webkit-text-stroke: 3px #c175b0;
+    color: #00ffff00;
+  }
+
+  &__subtitle{
+    line-height: 1.7em;
+  }
+}
+
+@media (min-width: 320px) {
+  .header{
+    margin-bottom: $indent-m;
+  }
+}
+
+@media (min-width: 660px) {
+  .header{
+    margin-bottom: $indent-l;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header{
+    margin-bottom: $indent-xl;
+  }
+}

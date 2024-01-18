@@ -1,0 +1,25 @@
+@import '../style/variables';
+
+.filter{
+  &__select {
+    max-width: 300px;
+    width: 100%;
+    padding: 9px 30px;
+    background: transparent;
+    color: $base-color;
+    border-radius: 20px;
+    cursor: pointer;
+    min-width: 200px;
+  }
+  &__option {
+    background: #151E27;
+    color: $base-color;
+    border: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filter{
+    max-width: 200px;
+  }
+}

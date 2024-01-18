@@ -1,0 +1,20 @@
+@import "../style/variables";
+
+.filters {
+  display: grid;
+  grid-gap: 24px;
+  align-content: baseline;
+  max-width: 300px;
+
+  &__title {
+    font-size: $size-m;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filters {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}

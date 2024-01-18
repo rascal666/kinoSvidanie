@@ -1,0 +1,42 @@
+@import "./style/variables";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+body {
+  @include responsive-body-padding;
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: $size-xs;
+  font-family: 'MontserratAlternates', sans-serif;
+  color: $base-color;
+  background-color: #151E27;
+  background-size: cover; /* Масштабирование картинки */
+  background-position: 20vw; /* Позиционирование картинки */
+  background-attachment: fixed; /* Фиксированный фон */
+  background-repeat: no-repeat; /* Запрет повторения фона */
+  background-image:  linear-gradient(90deg, #151E27 0%, rgba(37, 42, 47, 0.79) 189.94%), url("./public/bg.png");
+
+;
+}
+
+
+.button{
+  border-radius: 50px;
+  border: 1px solid #2C84D6;
+  background: #2C84D6;
+  color: $base-color;
+  padding: 8px 40px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+

@@ -1,0 +1,56 @@
+$size-xxs: 14px;
+$size-xs: 16px;
+$size-s: 18px;
+$size-m: 24px;
+$size-l: 32px;
+$size-xl: 90px;
+$size-xxl: 120px;
+
+
+$base-color: #E2F3F0;
+
+$indent-xs: 8px;
+$indent-s: 16px;
+$indent-m: 36px;
+$indent-l: 64px;
+$indent-xl: 120px;
+
+
+@mixin responsive-font-size {
+
+  @media (min-width: 320px) {
+    font-size: $size-l;
+  }
+
+  @media (min-width: 660px) {
+    font-size: $indent-l;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: $size-xl;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: $size-xxl;
+  }
+}
+
+@mixin responsive-body-padding {
+
+  @media (min-width: 320px) {
+    padding: $indent-s;
+  }
+
+  @media (min-width: 992px) {
+    padding: $indent-m;
+  }
+
+  @media (min-width: 1200px) {
+    padding: $indent-m;
+  }
+
+  @media (min-width: 1920px) {
+    padding: $indent-l;
+  }
+}
+

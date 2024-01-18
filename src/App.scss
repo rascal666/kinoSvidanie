@@ -1,0 +1,51 @@
+@import './style/variables';
+
+.app{
+  max-width: 1920px;
+  margin: auto;
+  &__kinoType{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: $indent-s;
+    margin-bottom: $indent-xl;
+  }
+  &__kinoTypeButton{
+    border-radius: 20px;
+    padding: 16px 60px;
+    max-width: fit-content;
+    font-size: $size-s;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  &__kinoTypeButton-active{
+    background: rgba(226, 243, 240, 0.20);
+  }
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 120px;
+}
+
+@media (max-width: 1200px) {
+  .app{
+    &__kinoType{
+      margin-bottom: $indent-m;
+    }
+    &__kinoTypeButton{
+      padding: 16px 24px;
+    }
+  }
+  .content{
+    grid-gap: 84px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 660px) {
+  .app {
+    &__kinoTypeButton {
+      font-size: $size-xxs;
+    }
+  }
+}
